@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="product1"  class="mylab.order.di.xml.Product">
+        <property name="name" value="apple" />
+        <property name="id" value="P001" />
+        <property name="price" value="1000" />
+    </bean>
+
+    <bean id="product2" class="mylab.order.di.xml.Product">
+        <property name="id" value="P002" />
+        <property name="price" value="3000" />
+        <property name="name" value="choco" />
+    </bean>
+
+    <bean id="shoppingCart" class="mylab.order.di.xml.ShoppingCart">
+        <property name="products">
+            <list>
+                <ref bean="product1" />
+                <ref bean="product2" />
+            </list>
+        </property>
+    </bean>
+
+
+    <bean id="orderService" class="mylab.order.di.xml.OrderService">
+        <property name="shoppingCart" ref="shoppingCart" />
+    </bean>
+</beans>
