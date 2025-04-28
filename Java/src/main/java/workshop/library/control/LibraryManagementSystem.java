@@ -1,7 +1,7 @@
-package main.java.workshop.library.control;
+package workshop.library.control;
 
-import main.java.workshop.library.entity.Book;
-import main.java.workshop.library.entity.Library;
+import workshop.library.entity.Book;
+import workshop.library.entity.Library;
 
 public class LibraryManagementSystem {
 

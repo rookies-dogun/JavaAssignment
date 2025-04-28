@@ -1,4 +1,4 @@
-package main.java.workshop.library.entity;
+package workshop.library.entity;
 
 
 import java.util.ArrayList;
