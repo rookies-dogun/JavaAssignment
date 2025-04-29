@@ -22,4 +22,7 @@
 #### [실습 1-2] Dependency Injection 전략2 – 어노테이션과 XML 설정을 혼합해서 설정하기
 - Package : SpringMaven.src.main.java.mylab.user.di.annot
 - Test : SpringMaven.src.test.java.mylab.user.di.annot.SpringTest
-
+#### [실습1-3] Dependency Injection 전략3 – Java Configuration 방식으로 설정하기
+- Package : SpringMaven.src.main.java.mylab.notification.di.annot
+- Test : SpringMaven.src.test.java.mylab.notification.di.annot
+  [실습1-4] DI(Dependency Injection) 전략2 적용( xml + annotation 혼용)
