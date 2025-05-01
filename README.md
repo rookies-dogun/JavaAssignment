@@ -17,15 +17,17 @@
 
 ## 🍃 Spring 연습문제
 #### 📝 (✅ 완료 )  [실습 1-1] Dependency Injection 전략1 
-- Package : Spring.SpringMaven.src.main.java.mylab.order.di.xml
-- Test : Spring.SpringMaven.src.test.java.mylab.order.di.xml.OrderSpringTest
+- Package : SpringFramework.src.main.java.mylab.order.di.xml
+- Test : SpringFramework.src.test.java.mylab.order.di.xml.OrderTest
 #### 📝 (✅ 완료 )  [실습 1-2] Dependency Injection 전략2 – 어노테이션과 XML 설정을 혼합해서 설정하기 
-- Package : Spring.SpringMaven.src.main.java.mylab.user.di.annot
-- Test : Spring.SpringMaven.src.test.java.mylab.user.di.annot.SpringTest
+- Package : SpringFramework.src.main.java.mylab.user.di.annot
+- Test : SpringFramework.src.test.java.mylab.user.di.annot.UserTest
 #### 📝 (✅ 완료 )  [실습 1-3] Dependency Injection 전략3 – Java Configuration 방식으로 설정하기 
-- Package : Spring.SpringMaven.src.main.java.mylab.notification.di.annot
-- Test : Spring.SpringMaven.src.test.java.mylab.notification.di.annot
-#### 📝 [실습 1-4] DI(Dependency Injection) 전략2 적용( xml + annotation 혼용)
+- Package : SpringFramework.src.main.java.mylab.notification.di.annot
+- Test : SpringFramework.src.test.java.mylab.notification.di.annot
+#### 📝 (✅ 완료 ) [실습 1-4] DI(Dependency Injection) 전략2 적용( xml + annotation 혼용)
+- Package : SpringFramework.src.main.java.mylab.customer
+- Test : SpringFramework.src.test.java.mylab.customer
 
 
 ## ❇️ Spring Boot 연습문제

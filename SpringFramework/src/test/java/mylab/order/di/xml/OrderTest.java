@@ -9,8 +9,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(locations = "classpath:mylab-order-di.xml")
-public class OrderSpringTest {
+@ContextConfiguration(locations = "classpath:order/order.xml")
+public class OrderTest {
 
 
     @Autowired

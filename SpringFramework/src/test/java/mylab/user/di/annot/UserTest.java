@@ -9,8 +9,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(locations = "classpath:mylab-user-di-annot.xml")
-public class SpringTest {
+@ContextConfiguration(locations = "classpath:user/user.xml")
+public class UserTest {
 
 
 
