@@ -20,6 +20,19 @@
 
 	<!-- SqlSessionFactoryBean 설정	-->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="configLocation" value="classpath:customer/mybatis/SqlMapConfig.xml" />
+		<property name="mapperLocations">
+			<list><value>classpath:customer/mybatis/*Mapper.xml</value></list>
+		</property>
+	</bean>
 
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg ref="sqlSessionFactory" />
+	</bean>
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="**.dao.mapper" />
+		<property name="sqlSessionTemplateBeanName" value="sqlSession" />
 	</bean>
 </beans>

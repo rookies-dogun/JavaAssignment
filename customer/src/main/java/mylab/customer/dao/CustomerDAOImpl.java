@@ -7,8 +7,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
+@Repository("customerDao")
 public class CustomerDAOImpl implements CustomerDAO {
+
     @Autowired
     private CustomerMapper customerMapper;
 

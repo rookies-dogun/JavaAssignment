@@ -60,4 +60,15 @@ public class CustomerVO {
     public void setAge(int age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "CustomerVO{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", name='" + name + '\'' +
+                ", entryDate=" + entryDate +
+                ", age=" + age +
+                '}';
+    }
 }

@@ -10,7 +10,7 @@
     </settings>
     
 	<typeAliases>
-		<typeAlias alias="Customer" type="mylab.customer.vo.customerVO" />
+		<typeAlias alias="Customer" type="mylab.customer.vo.CustomerVO" />
 	</typeAliases>
 
 </configuration>
