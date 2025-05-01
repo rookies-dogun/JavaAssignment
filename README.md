@@ -1,5 +1,10 @@
-
-
+## 참고사항
+- Java 연습문제 실습 1-4
+  - 내용 자체는 책의 출판과 관련된 내용인데 왜 ShoppingCart 라는 클래스를 하는지
+    - Shopping Cart 자체는 똑같은 책을 담을 수 있지만, 정작 고유한 책의 정보를 담는 객체가 없음
+    - 따라서 Shopping Cart 를 Book Catalog 로 보고 사용
+  - 클래스 다이어그램과 Sample Run의 일치하지 않는 부분
+    - 재량껏 구현
 ## ☕ Java 연습문제
 #### 📝 (✅ 완료 )  [실습 1]: 학생 정보 (Student) 클래스 구현 
 - Package : Java.src.main.java.workshop.student
@@ -7,10 +12,11 @@
 - Package : Java.src.main.java.workshop.library 
 #### 📝 (✅ 완료 )  [실습 3] 은행 계좌 관리 시스템 구현하기 
 - Package : Java.src.main.java.workshop.bank
-#### 📝 [실습 4] 다형성을 활용한 출판물(Publication)관리와 쇼핑카트 구현하기
+#### 📝 (✅ 완료 )  [실습 4] 다형성을 활용한 출판물(Publication)관리와 쇼핑카트 구현하기
+- Package : Java.src.main,java.workshop.book
 
 #### 📝 [실습 5] 인터페이스를 활용한 음악 재생 구현하기
-
+- Package : Java.src.main,java.workshop.music
 
 ## 🍃 Spring 연습문제
 #### 📝 (✅ 완료 )  [실습 1-1] Dependency Injection 전략1 

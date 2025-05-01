@@ -8,8 +8,8 @@ public class Magazine extends Publication {
         super();
 
     }
-    public Magazine(String title, String author, int page, int price, String publishPeriod) {
-        super(title, author, page, price);
+    public Magazine(String title, String publishDate, int page, int price, String publishPeriod) {
+        super(title, publishDate, page, price);
         this.publishPeriod = publishPeriod;
 
     }

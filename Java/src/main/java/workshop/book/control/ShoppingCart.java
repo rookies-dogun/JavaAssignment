@@ -21,17 +21,13 @@ public class ShoppingCart {
     }
 
     public boolean removeItem(String title) {
-        for(Publication item : items) {
-            if(item.getTitle().equals(title)) {
+        for (Publication item : items) {
+            if (item.getTitle().equals(title)) {
                 items.remove(item);
                 return true;
             }
         }
         return false;
-    }
-
-    public void displayCart(){
-
     }
 
     public int calculateTotalPrice() {
@@ -42,27 +38,46 @@ public class ShoppingCart {
 
         return total;
     }
-    public int calculateDiscountedPrice(){
+
+    public int calculateDiscountedPrice() {
         int discount = 0;
         for (Publication item : items) {
-            if(item instanceof Novel){
+            if (item instanceof Novel) {
                 discount += (int) (((Novel) item).getPrice() * 0.15);
-            }
-            else if(item instanceof ReferenceBook){
+            } else if (item instanceof ReferenceBook) {
                 discount += (int) (((ReferenceBook) item).getPrice() * 0.2);
 
-            }
-            else if(item instanceof Magazine){
+            } else if (item instanceof Magazine) {
                 discount += (int) (((Magazine) item).getPrice() * 0.1);
 
-            }else {
+            } else {
                 continue;
             }
         }
         return discount;
     }
 
-    public void printStatistics(){
-        Map<String, int>
+
+
+    public List<Publication> getItems() {
+        return items;
     }
+    public void printItems() {
+
+        int i = 1;
+        for (Publication item : items) {
+            if (item instanceof Novel) {
+                System.out.println(i + ". " + item.getTitle() + " [소설] " + " 저자 : " + ((Novel) item).getAuthor() + ", 장르 :" + ((Novel) item).getGenre() + ", " + item.getPage() + "쪽, " + item.getPrice() + "원, 출판일:" + item.getPublishDate());
+            } else if (item instanceof ReferenceBook) {
+                System.out.println(i + ". " + item.getTitle() + " [참고서] " + ", 분야 :" + ((ReferenceBook) item).getField() + ", " + item.getPage() + "쪽, " + item.getPrice() + "원, 출판일:" + item.getPublishDate());
+
+            } else if (item instanceof Magazine) {
+                System.out.println(i + ". " + item.getTitle() + " [잡지] " + ", 발행주기 :" + ((Magazine) item).getPublishPeriod() + ", " + item.getPage() + "쪽, " + item.getPrice() + "원, 출판일:" + item.getPublishDate());
+            } else {
+                continue;
+            }
+            i++;
+        }
+    }
+
 }
