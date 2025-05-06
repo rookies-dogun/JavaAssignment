@@ -5,6 +5,9 @@
     - 따라서 Shopping Cart 를 Book Catalog 로 보고 사용
   - 클래스 다이어그램과 Sample Run의 일치하지 않는 부분
     - 재량껏 구현
+
+- Java 연습문제 실습 1-5
+  - Vinyl 은 display를 자체적으로 구현 
 ## ☕ Java 연습문제
 #### 📝 (✅ 완료 )  [실습 1]: 학생 정보 (Student) 클래스 구현 
 - Package : Java.src.main.java.workshop.student
@@ -14,7 +17,7 @@
 - Package : Java.src.main.java.workshop.bank
 #### 📝 (✅ 완료 )  [실습 4] 다형성을 활용한 출판물(Publication)관리와 쇼핑카트 구현하기
 - Package : Java.src.main,java.workshop.book
-#### 📝 [실습 5] 인터페이스를 활용한 음악 재생 구현하기
+#### 📝 (✅ 완료 )  [실습 5] 인터페이스를 활용한 음악 재생 구현하기
 - Package : Java.src.main,java.workshop.music
 
 ## 🍃 Spring 연습문제
